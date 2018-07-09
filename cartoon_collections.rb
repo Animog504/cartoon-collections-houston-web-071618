@@ -28,6 +28,7 @@ def find_the_cheese(itemList)# code an argument here
   cheese_types = ["cheddar", "gouda", "camembert"]
   
   itemList.map! {|item| (return item.to_str; break;) if cheese_types.include?(item)}
+  return nil
  
   
 end

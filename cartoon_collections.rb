@@ -11,8 +11,16 @@ end
 
 def long_planeteer_calls(calls)# code an argument here
   # Your code here
-  calls.collect do {|x| x.length > 4}
+  longBoi = false
+  calls.collect do |x| 
+    if x.length > 4
+      return true
+    else 
+      longBoi = false
+    end  
   end
+  
+  return longBoi
 end
 
 def find_the_cheese# code an argument here

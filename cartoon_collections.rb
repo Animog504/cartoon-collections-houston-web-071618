@@ -27,5 +27,5 @@ def find_the_cheese(itemList)# code an argument here
   # the array below is here to help
   cheese_types = ["cheddar", "gouda", "camembert"]
   
-  itemList.map {|x| until cheese_types.include?(x)}
+  itemList.map {|x| cheese_types.include?(x)}
 end

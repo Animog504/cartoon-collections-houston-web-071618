@@ -27,5 +27,7 @@ def find_the_cheese(itemList)# code an argument here
   # the array below is here to help
   cheese_types = ["cheddar", "gouda", "camembert"]
   
-  itemList.map {|x| cheese_types.include?(x)}
+  itemList.each_with_index |item,index| cheese_types.include?(item)
+  puts itemList(index)
+  
 end
